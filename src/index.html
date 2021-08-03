@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Generador</title>
+	</head>
+	<body>
+		<div>
+			<h1>Generador de numeros aleatorios</h1>
+			<h2>con curva de Bezier (v1)</h2>
+		</div>
+		
+		<canvas
+			id="myCanvas"
+			width="400"
+			height="600"
+			style="border: 1px solid #000000"
+		></canvas>
+		
+			<!-- <div>
+				<input type="radio" name="enteros" value="enteros">
+				<label for="enteros">Enteros</label>
+				<input type="radio" name="decimales" value="decimales">
+				
+				<label for="decimales">Decimales</label>
+			</div> -->
+			<div>
+				<span>Cantidad de números</span>
+				<input type="number" value="100" step="1" min="1" id="cant">
+			</div>
+			<div>
+				<span>Rango</span>
+				<input type="number" value="1" id="inicio" step="1">
+				<span>hasta</span>
+				<input type="number" value="10" id="final" step="1">
+			</div>
+			<div>
+				<button id="gen">Generar</button>
+			</div>
+
+			
+
+		
+		<div>
+			<textarea id="text" rows="4" cols="50"> </textarea>
+		</div>
+		
+		<script src="./script.js"></script>
+		<style>
+			canvas {
+				background-color: white;
+				width: 400px;
+				height: 600px;
+			}
+			h1,h2{
+				text-align: center;
+				font-weight: lighter;
+			}
+			html, body {
+				font-family: Arial, Helvetica, sans-serif;
+				
+			}
+			body{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			body > * {
+				margin-bottom: 10px;
+			}
+
+			input[type=number]{
+				width: 6vh;
+				height: 4vh;
+				font-size: larger;
+			}
+
+			button {
+				font-size: larger;
+			}
+			
+		</style>
+	</body>
+</html>
